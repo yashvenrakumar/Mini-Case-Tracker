@@ -1,1 +1,0 @@
-mongodb+srv://yashvendrajnv95_db_user:zzFNdKxr0wkmxFq7@tracker.criyw6d.mongodb.net/?appName=tracker

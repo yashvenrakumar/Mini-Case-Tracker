@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Prevent accidental horizontal scroll; flex layouts need min-width 0 */
+html {
+  overflow-x: hidden;
+}
+
+:root,
+[data-theme='light'] {
+  --color-primary: #2a3f6d;
+  --color-primaryDark: #1e2430;
+  --color-accent: #6b8bbe;
+  --color-background: #f6f5f1;
+  --color-backgroundAlt: #efede6;
+  --color-surface: #ffffff;
+  --color-border: #c9ced6;
+  --color-text: #1e2430;
+  --color-textMuted: #4a5d73;
+  --color-onPrimary: #f6f5f1;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --color-primary: #93c5fd;
+  --color-primaryDark: #bfdbfe;
+  --color-accent: #60a5fa;
+  --color-background: #1e293b;
+  --color-backgroundAlt: #334155;
+  --color-surface: #0f172a;
+  --color-border: #475569;
+  --color-text: #f8fafc;
+  --color-textMuted: #cbd5e1;
+  --color-onPrimary: #1e293b;
+  color-scheme: dark;
+}
+
+:root {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: left;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 0;
+  width: 100%;
+}
