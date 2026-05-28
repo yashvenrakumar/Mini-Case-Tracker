@@ -5,9 +5,9 @@ import { connectDatabase } from './config/database';
 const start = async () => {
   try {
     await connectDatabase();
-    app.listen(config.port, '0.0.0.0', () => {
-      console.log(`Server running on port ${config.port}`);
-      console.log(`Swagger docs: /api-docs`);
+    app.listen(config.port, () => {
+      console.log(`Server running on http://localhost:${config.port}`);
+      console.log(`Swagger docs: http://localhost:${config.port}/api-docs`);
     });
   } catch (error) {
     console.error('Failed to start server:', error);
