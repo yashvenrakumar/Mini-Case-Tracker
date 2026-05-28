@@ -4,8 +4,8 @@ services:
     runtime: node
     plan: free
     rootDir: backend
-    buildCommand: yarn && yarn build
-    startCommand: yarn start
+    buildCommand: npm ci || npm install && npm run build
+    startCommand: npm start
     autoDeploy: true
     envVars:
       - key: NODE_ENV
