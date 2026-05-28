@@ -6,4 +6,9 @@
 **/temp
 dist
 .env
+.env.*
 *.local
+
+# Avoid accidentally committing nested git repos (e.g., frontend/.git)
+backend/.git/
+frontend/.git/
