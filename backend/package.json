@@ -9,6 +9,9 @@
     "start": "node dist/server.js",
     "lint": "eslint src --ext .ts"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "keywords": [
     "case-tracker",
     "express",
